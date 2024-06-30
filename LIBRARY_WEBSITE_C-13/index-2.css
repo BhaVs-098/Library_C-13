@@ -1,0 +1,46 @@
+.search-bar .filters {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  
+  .search-bar label {
+    margin-right: 5px;
+  }
+  
+  .search-bar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .book-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .info {
+    color:white;
+    font-size: large;
+    background-color: #f0f0f0;
+  }
+  
+  /* Add styling for individual book elements here (e.g., .book) */
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .search-bar {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .search-bar .filters {
+      margin: 10px 0;
+    }
+  
+    .book-results {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  

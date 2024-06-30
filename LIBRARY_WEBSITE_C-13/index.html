@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to BVRIT LIBRARY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BVRIT LIBRARY</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse Catalog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <button onclick="window.location.href='register.html'">Register</button>
+  <button onclick="window.location.href='login.html'">LOGIN</button>
+  
+
+  <main>
+    
+    <section class="search-bar">
+        <input type="text" id="search-box" placeholder="Search for Books">
+        <button id="search-btn" onclick="">Search</button>
+  
+        <div class="filters">
+          <label for="department">Department:</label>
+          <select id="department">
+            <option value="all">All Departments</option>
+            <option value="computer-science">Computer Science Engineering</option>
+            <option value="Pharmacy">Pharmacy</option>
+            <option value="it">IT</option>
+            <option value="CIVIL">Civil</option>
+            <option value="Mechanical">Mechanical</option>    
+            <option value="allied-branches">Allied Branches</option>
+            </select>
+        </div>
+        
+      </section>
+      <section class="info">
+        <div>
+          <label for="About">OUR LIBRARY</label>
+          <p>The Library of Vishnu Institute of Technology was built to keep up International Standards, is located in separate block - a new multi-storied building with carpet area of 1878 sq. meters. with sufficient area for stacks and reading space. It is fully computerized and furnished, containing a large number of volumes, titles, journals, periodicals and newspapers. With the ambience provided by the facilities and atmosphere, it can be truly called a 'Knowledge Centre' and also a 'Learning Centre' and all the students and staff find it conducive for constructive study.</p>
+        </div>
+      </section>
+    
+    
+
+    <section class="book-results" id="results">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; BVRIT LIBRARY </p>
+  </footer>
+<style>
+  body{
+    background-image: url(libblock.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+  <script src="first.js"></script>
+</body>
+</html>
